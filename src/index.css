@@ -11,6 +11,12 @@
   font-style: normal;
 }
 
+html, body {
+  margin: 20;
+  padding: 0;
+  background: #FCF8F5;
+}
+
 body {
   font-family: 'Red Hat Display', sans-serif;
 }
