@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# 🧁 Dessert Shop - React + TypeScript Mini E-Commerce Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal and responsive dessert ordering interface built with **React**, **TypeScript**, and **CSS**.  
+Users can browse desserts, add them to cart, adjust quantities, and confirm orders with a clean modal UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshot
+<img src="https://github.com/aysuyildizcaldiran/cart-main/blob/main/public/project/main.png" alt="" width="300"/> <img src="https://github.com/aysuyildizcaldiran/cart-main/blob/main/public/project/main2.png" alt="" width="300"/> <img src="https://github.com/aysuyildizcaldiran/cart-main/blob/main/public/project/main3.png" alt="" width="300"/>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 🛍️ Add/remove items to/from cart
+- 🔢 Quantity control with increment/decrement buttons
+- 💵 Dynamic total price calculation
+- 🧾 Order confirmation modal with summary
+- 🖼️ Responsive design (mobile/tablet/desktop)
+- ♻️ Carbon-neutral delivery notice (just for fun!)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Tech Stack
+
+- **React** (w/ Hooks)
+- **TypeScript**
+- **CSS** (with media queries)
+- No external UI libraries – fully custom styled
+
+---
+
+## Installation
+
+```
+# 1. Clone the repository
+https://github.com/username/cart-main.git
+cd cart-main
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+You can contact us for any suggestions and feedback!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
